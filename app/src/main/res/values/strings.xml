@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">iPhone Catalogue</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="something_wrong">Oops.. Something went wrong</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="iphone_image">iPhone Image</string>
+    <string name="label_release">Release :</string>
+    <string name="label_storage">Storage :</string>
+    <string name="label_ram">RAM :</string>
+    <string name="label_dimension">Dimension :</string>
+    <string name="label_display">Display</string>
+    <string name="label_battery">Battery</string>
+    <string name="label_selfie_camera">Selfie Camera</string>
+    <string name="label_main_camera">Main Camera</string>
+    <string name="label_os">OS</string>
+    <string name="label_chipset">Chipset</string>
+    <string name="label_cpu">CPU</string>
+    <string name="label_gpu">GPU</string>
+    <string name="fab">Floating Action Button</string>
+</resources>
