@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_thumbnail_detail"
+        android:layout_width="134dp"
+        android:layout_height="180dp"
+        android:contentDescription="@string/iphone_image"
+        android:paddingEnd="16dp"
+        android:background="#DDDDDD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/placeholder.text.detail_top"
+        android:paddingBottom="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_thumbnail_detail"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/tv_label_release"
+        style="@style/placeholder.text.detail_top"
+        android:text="@string/label_release"
+        app:layout_constraintStart_toEndOf="@id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_release"
+        style="@style/placeholder.text.detail_top"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_release"
+        android:text="2015" />
+
+    <TextView
+        android:id="@+id/tv_label_storage"
+        style="@style/placeholder.text.detail_top"
+        android:text="@string/label_storage"
+        app:layout_constraintStart_toEndOf="@+id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_release" />
+
+    <TextView
+        android:id="@+id/tv_storage"
+        style="@style/placeholder.text.detail_top"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_storage"
+        android:text="16GB, 32GB, 64GB" />
+
+    <TextView
+        android:id="@+id/tv_label_ram"
+        style="@style/placeholder.text.detail_top"
+        android:text="@string/label_ram"
+        app:layout_constraintStart_toEndOf="@+id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_storage" />
+
+    <TextView
+        android:id="@+id/tv_ram"
+        style="@style/placeholder.text.detail_top"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ram"
+        android:text="2GB" />
+
+    <TextView
+        android:id="@+id/tv_label_dimension"
+        style="@style/placeholder.text.detail_top"
+        android:text="@string/label_dimension"
+        app:layout_constraintStart_toEndOf="@+id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ram" />
+
+    <TextView
+        android:id="@+id/tv_dimension"
+        style="@style/placeholder.text.detail_top"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_thumbnail_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_dimension"
+        android:text="192 | 158.2 x 77.9 x 7.3 mm" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dimension">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_display"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_display" />
+
+            <TextView
+                android:id="@+id/tv_display"
+                style="@style/placeholder.text.table_data"
+                android:text="Super Retina XDR OLED, HDR10, Dolby Vision, 800 nits (HBM), 1200 nits (peak) 6.1 inches 1170 x 2532 pixels, 19.5:9 ratio (~460 ppi density) Scratch-resistant ceramic glass, oleophobic coating" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_battery"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_battery" />
+
+            <TextView
+                android:id="@+id/tv_battery"
+                style="@style/placeholder.text.table_data"
+                android:text="Li-Ion 3240 mAh, non-removable (12.41 Wh)" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_selfie_camera"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_selfie_camera" />
+
+            <TextView
+                android:id="@+id/tv_selfie_camera"
+                style="@style/placeholder.text.table_data"
+                android:text='12 MP, f/2.2, 23mm (wide), 1/3.6\" 4K@24/25/30/60fps, 1080p@30/60/120fps, gyro-EIS' />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_main_camera"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_main_camera" />
+
+            <TextView
+                android:id="@+id/tv_main_camera"
+                style="@style/placeholder.text.table_data"
+                android:text='12 MP, f/1.6, 26mm (wide), 1.7µm, dual pixel PDAF, sensor-shift OIS\n12 MP, f/2.4, 120˚, 13mm (ultrawide)\n4K@24/30/60fps, 1080p@30/60/120/240fps, HDR, Dolby Vision HDR (up to 60fps)' />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_os"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_os" />
+
+            <TextView
+                android:id="@+id/tv_os"
+                style="@style/placeholder.text.table_data"
+                android:text="iOS 15, upgradable to iOS 15.4" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_chipset"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_chipset" />
+
+            <TextView
+                android:id="@+id/tv_chipset"
+                style="@style/placeholder.text.table_data"
+                android:text="Apple A15 Bionic (5 nm)" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_cpu"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_cpu" />
+
+            <TextView
+                android:id="@+id/tv_cpu"
+                style="@style/placeholder.text.table_data"
+                android:text="Hexa-core (2x3.22 GHz Avalanche + 4xX.X GHz Blizzard)" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_label_gpu"
+                style="@style/placeholder.text.table_label"
+                android:text="@string/label_gpu" />
+
+            <TextView
+                android:id="@+id/tv_gpu"
+                style="@style/placeholder.text.table_data"
+                android:text="Apple GPU (4-core graphics)" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
