@@ -46,4 +46,5 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation "com.github.kirich1409:viewbindingpropertydelegate:$viewBindingDelegateVersion"
+    implementation "com.facebook.shimmer:shimmer:$shimmer_version"
 }
