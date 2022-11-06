@@ -23,6 +23,7 @@ This project was created to complete the MADE class in Dicoding Course. There ar
   <li>Modularization</li>
   <li>Reactive Programming with Coroutines Flow</li>
   <li>Koin Dependency Injection</li>
+  <li>Shimmer</li>
   <li>Retrofit</li>
   <li>RecyclerView</li>
   <li>Room Database</li>
@@ -31,3 +32,6 @@ This project was created to complete the MADE class in Dicoding Course. There ar
   <li>Certificate Pinner with OkHttp</li>
   <li>Obfuscation with Proguard</li>
 </ul>
+
+# Preview
+<img src="https://github.com/faynald/iPhoneCatalogue/blob/master/app.gif" width="200">
